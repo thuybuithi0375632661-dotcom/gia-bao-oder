@@ -2,12 +2,12 @@
 // Simple static shop with SMS order sending.
 // Products are defined inline here.
 const products = [
-    {id: 1, name: 'Matcha latte muối biển', price: 9000, desc: 'Trà sữa béo, trân châu dai', img: "https://source.unsplash.com/random/200x200?matcha"},
-    {id: 2, name: 'Matcha latte muối biển', price: 10k, desc: 'Trà sữa béo, trân châu dai', img: "https://source.unsplash.com/random/200x200?bobatea"},
-    {id: 3, name: 'Matcha cold whish', price: 30000, desc: 'Cà phê rang thơm, sữa đặc', img: "https://source.unsplash.com/random/200x200?coffee"},
-    {id: 4, name: 'Trà houjicha latte', price: 40000, desc: 'Bơ sánh mịn, nhiều vitamin', img: "https://source.unsplash.com/random/200x200?smoothie"},
-    {id: 5, name: 'Trà chanh mật ong', price: 12000, desc: 'Giải khát, dịu nhẹ', img: "https://source.unsplash.com/random/200x200?lemontea"} 
-]; // Dấu chấm phẩy (;) là tùy chọn, có thể có hoặc không
+    {id: 1, name: 'Trà sữa trân châu', price: 45000, desc: 'Trà sữa béo, trân châu dai', img: "https://source.unsplash.com/random/200x200?bobatea"},
+    {id: 2, name: 'Cà phê sữa đá', price: 30000, desc: 'Cà phê rang thơm, sữa đặc', img: "https://source.unsplash.com/random/200x200?coffee"},
+    {id: 3, name: 'Sinh tố bơ', price: 40000, desc: 'Bơ sánh mịn, nhiều vitamin', img: "https://source.unsplash.com/random/200x200?smoothie"},
+    {id: 4, name: 'Trà chanh mật ong', price: 12000, desc: 'Giải khát, dịu nhẹ', img: "https://source.unsplash.com/random/200x200?lemontea"} 
+];
+
 
 
 const phoneToSend = window.APP_CONFIG && window.APP_CONFIG.phone ? window.APP_CONFIG.phone : "0865904246";
