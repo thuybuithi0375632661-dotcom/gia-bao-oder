@@ -1,3 +1,81 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #fff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #a8e6cf;
+  padding: 20px;
+  border-bottom: 2px solid #81c784;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.menu {
+  margin-top: 20px;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.price {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.order {
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: auto;
+}
+
+input, select, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #a8e6cf;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+}
 
 :root{
   --bg:#f7fafc; --card:#fff; --accent:#ff7a59;
