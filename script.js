@@ -1,3 +1,25 @@
+document.getElementById("orderForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const drink = document.getElementById("drink").value;
+  const quantity = document.getElementById("quantity").value;
+  const delivery = document.getElementById("delivery").value;
+  const address = document.getElementById("address").value;
+
+  let message = `Xin chào, mình là ${name}%0A`;
+  message += `📱 SĐT: ${phone}%0A`;
+  message += `☕ Món: ${drink}%0A`;
+  message += `🧾 Số lượng: ${quantity}%0A`;
+  message += `🚚 Hình thức: ${delivery}%0A`;
+  if (delivery === "Giao tận nơi" && address)
+    message += `🏠 Địa chỉ: ${address}%0A`;
+  message += `%0A👉 Đặt tại Gia Bảo Oder`;
+
+  const zaloURL = `https://zalo.me/0865904246?text=${message}`;
+  window.open(zaloURL, "_blank");
+});
 
 // Simple static shop with SMS order sending.
 // Products are defined inline here.
