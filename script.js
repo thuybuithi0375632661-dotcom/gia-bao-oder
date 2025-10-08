@@ -129,9 +129,11 @@ function placeOrderSMS(){
   lines.push('Ghi chú: (gõ thêm nếu cần)');
   const body = encodeURIComponent(lines.join('\n'));
   // sms: URI — different platforms use different formats; provide both sms: and sms:&body
-  const smsLink = `sms:${phoneToSend}?body=${body}`;
+  const zaloLink = 'https://zalo.me/' + zaloPhoneNumber + '?text=' + encodeURIComponent(body);
   // open link
-  window.location.href = smsLink;
+const zaloPhoneNumber = '0865904246'; 0865904246 <-- THAY SỐ NÀY BẰNG SỐ ZALO CỦA QUÁN BẠN
+const zaloLink = 'https://zalo.me/' + zaloPhoneNumber + '?text=' + encodeURIComponent(body); 
+  window.location.href = zaloLink;
 }
 
 // init
