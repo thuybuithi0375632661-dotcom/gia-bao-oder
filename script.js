@@ -141,7 +141,7 @@ const zaloLink = 'https://zalo.me/' + zaloPhoneNumber + '?text=' + encodeURIComp
 
 // init
 document.addEventListener('DOMContentLoaded', ()=>{
-  renderProducts();}
+  renderProducts();
   renderCart();
   q('place-order').addEventListener('click', placeOrderSMS);
-};
+}
