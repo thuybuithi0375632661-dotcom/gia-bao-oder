@@ -1,49 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Gia Bảo Drinks - Order</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gia Bảo Oder</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <h1>Gia Bảo Drinks</h1>
-    <p class="slogan">Order nước uống dễ dàng, nhanh chóng</p>
-    <div class="contact">📞 0865904246 &nbsp; · &nbsp; 📍 Chợ Vườn Đào, Thôn Đại Khoang, Cát Lâm, Phù Cát, Bình Định</div>
+  <header>
+    <h1>Gia Bảo Oder</h1>
+    <p>Order nước uống nhanh chóng, tiện lợi 🍵</p>
   </header>
 
-  <main class="container">
-    <section class="products" id="products"></section>
-
-    <aside class="cart" id="cart">
-      <h2>Giỏ hàng</h2>
-      <div id="cart-items">Matcha latte 9000.</div>
-      <div class="summary">
-        <div>Tạm tính: <span id="subtotal">0</span>₫</div>
-        <div>Phí giao: <span id="shipping">0</span>₫</div>
-        <div class="total">Tổng: <span id="total">0</span>₫</div>
+  <section class="menu">
+    <h2>Menu Nước Uống</h2>
+    <div class="items">
+      <div class="item">
+        <h3>Matcha Latte</h3>
+        <p class="price">9.000đ</p>
       </div>
-
-      <div class="customer">
-        <input id="name" placeholder="Họ và tên" />
-        <input id="phone" placeholder="Số điện thoại (khách)" />
-        <input id="address" placeholder="Địa chỉ (nơi giao)" />
+      <div class="item">
+        <h3>Matcha Latte</h3>
+        <p class="price">10.000đ</p>
       </div>
- <option value="pickup">Nhận tại cửa hàng</option>
-    </select>
-</div>
-      <button id="place-order">Đặt hàng qua Zalo</button>
-      <p class="note">Khi bấm nút, điện thoại sẽ mở ứng dụng Zalo với nội dung đơn hàng để bạn gửi cho 0865904246.</p>
-    </aside>
-  </main>
+      <div class="item">
+        <h3>Trà Houjicha</h3>
+        <p class="price">20.000đ</p>
+      </div>
+      <div class="item">
+        <h3>Matcha Cold Whish</h3>
+        <p class="price">14.000đ</p>
+      </div>
+    </div>
+  </section>
 
-  <footer class="footer">© 2025 Gia Bảo Drinks</footer>
+  <section class="order">
+    <h2>Đặt Hàng Ngay</h2>
+    <form id="orderForm">
+      <input type="text" id="name" placeholder="Tên của bạn" required />
+      <input type="tel" id="phone" placeholder="Số điện thoại" required />
+      <select id="drink" required>
+        <option value="">-- Chọn món --</option>
+        <option value="Matcha Latte 9k">Matcha Latte - 9K</option>
+        <option value="Matcha Latte 10k">Matcha Latte - 10K</option>
+        <option value="Trà Houjicha 20k">Trà Houjicha - 20K</option>
+        <option value="Matcha Cold Whish 14k">Matcha Cold Whish - 14K</option>
+      </select>
+      <input type="number" id="quantity" placeholder="Số lượng" min="1" value="1" required />
+      <select id="delivery" required>
+        <option value="Nhận tại quán">Nhận tại quán</option>
+        <option value="Giao tận nơi">Giao tận nơi</option>
+      </select>
+      <input type="text" id="address" placeholder="Địa chỉ (nếu giao tận nơi)" />
+      <button type="submit">Gửi đơn qua Zalo</button>
+    </form>
+  </section>
 
-  <script>
-    // Inline config injected by build step
-    window.APP_CONFIG = { phone: "0865904246", shopName: "Gia Bảo Drinks", address: "Chợ Vườn Đào, Thôn Đại Khoang, Cát Lâm, Phù Cát, Bình Định" };
-  </script>
+  <footer>
+    <p>📍 Chợ Vườn Đào, Thôn Đại Khoang, Cát Lâm, Phù Cát, Bình Định</p>
+    <p>📞 0865 904 246</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
