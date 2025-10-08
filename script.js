@@ -89,7 +89,7 @@ function renderCart(){
 
 function updateSummary(){
   const subtotal = cart.reduce((s,i)=>s + i.price * i.qty, 0);
-  const shipping = subtotal>0 ? 10000 : 0;
+  const shipping = subtotal>0 ? 0 : 0;
   const total = subtotal + shipping;
   q('subtotal').innerText = fmt(subtotal);
   q('shipping').innerText = fmt(shipping);
