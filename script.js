@@ -4,7 +4,7 @@
 const products = [
   { id:1, name:"Matcha latte muối biển", price:9000, desc:"Trà sữa béo, trân châu dai", img:"https://source.unsplash.com/400x300/?bubble-tea" },
   { id:2, name:"Matcha latte muối biển", price:10000, desc:"Cà phê rang thơm, sữa đặc", img:"https://source.unsplash.com/400x300/?coffee" },
-  { id:3, name:"Matcha Cold Whish", price:14000, desc:"Bơ sánh mịn, nhiều vitamin", img:"https://source.unsplash.com/400x300/?avocado-smoothie" },
+  { id:3, name:"Matcha Cold Whish", price:14000, desc:"Matcha sánh mịn, nhiều vitamin", img:"https://source.unsplash.com/400x300/?avocado-smoothie" },
   { id:4, name:"Trà Houjicha", price:9000, desc:"Giải khát, dịu nhẹ", img:"https://source.unsplash.com/400x300/?lemon-tea" }
 ];
 
