@@ -20,7 +20,7 @@ function fmt(n){return Number(n).toLocaleString('vi-VN')}
 
 {const container = document.getElementById('product-list'); // 
 
-  const out = q('product-list');
+  const out = q('products');
   out.innerHTML = '';
   products.forEach(p=>{
     const el = document.createElement('article');
