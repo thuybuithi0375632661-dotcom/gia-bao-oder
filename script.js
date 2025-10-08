@@ -18,7 +18,8 @@ function q(id){return document.getElementById(id)}
 
 function fmt(n){return Number(n).toLocaleString('vi-VN')}
 
-function renderProducts(){
+{const container = document.getElementById('product-list'); // 
+
   const out = q('products');
   out.innerHTML = '';
   products.forEach(p=>{
