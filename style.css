@@ -1,0 +1,31 @@
+
+:root{
+  --bg:#f7fafc; --card:#fff; --accent:#ff7a59;
+}
+*{box-sizing:border-box;font-family:Inter,system-ui,Arial,Helvetica,sans-serif}
+body{margin:0;background:var(--bg);color:#111}
+.header{background:linear-gradient(90deg,#ffecd2,#fcb69f);padding:18px;text-align:center}
+.header h1{margin:0;font-size:1.4rem}
+.slogan{margin:6px 0;color:#5b5b5b}
+.contact{font-size:0.85rem;color:#333;margin-top:8px}
+.container{display:grid;grid-template-columns:1fr 320px;gap:16px;max-width:980px;margin:18px auto;padding:0 12px}
+.products{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.card{background:var(--card);border-radius:12px;padding:10px;box-shadow:0 6px 14px rgba(10,10,10,0.06);overflow:hidden}
+.card img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+.card h3{margin:8px 0 2px;font-size:1rem}
+.card p{margin:0;color:#666;font-size:0.9rem}
+.card .row{display:flex;align-items:center;justify-content:space-between;margin-top:8px}
+.btn{background:linear-gradient(90deg,#22c1c3,#fdbb2d);border:0;padding:8px 10px;border-radius:8px;cursor:pointer;color:#fff;font-weight:600}
+.cart{background:var(--card);padding:12px;border-radius:12px;height:fit-content;box-shadow:0 6px 14px rgba(10,10,10,0.06)}
+#cart-items{max-height:220px;overflow:auto;margin-bottom:8px}
+.cart-item{display:flex;gap:8px;align-items:center;border-bottom:1px solid #eee;padding:8px 0}
+.cart-item img{width:60px;height:48px;object-fit:cover;border-radius:6px}
+.cart-item .meta{flex:1}
+.cart-item .qty{display:flex;align-items:center;gap:6px}
+.qty button{padding:4px 6px;border-radius:6px;border:1px solid #ddd;background:#fafafa;cursor:pointer}
+.summary{font-size:0.95rem;margin-bottom:8px}
+.customer input{width:100%;padding:8px;margin-bottom:8px;border-radius:8px;border:1px solid #e5e7eb}
+#place-order{width:100%;padding:10px;border-radius:10px;border:0;background:var(--accent);color:#fff;font-weight:700;cursor:pointer}
+.note{font-size:0.8rem;color:#666;margin-top:6px}
+.footer{text-align:center;padding:14px;color:#666;margin-top:18px}
+@media(max-width:880px){.container{grid-template-columns:1fr;}.cart{order:2;margin-top:8px}}

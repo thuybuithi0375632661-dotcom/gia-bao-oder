@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gia Bảo Drinks - Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Gia Bảo Drinks</h1>
+    <p class="slogan">Order nước uống dễ dàng, nhanh chóng</p>
+    <div class="contact">📞 0865904246 &nbsp; · &nbsp; 📍 Chợ Vườn Đào, Thôn Đại Khoang, Cát Lâm, Phù Cát, Bình Định</div>
+  </header>
+
+  <main class="container">
+    <section class="products" id="products"></section>
+
+    <aside class="cart" id="cart">
+      <h2>Giỏ hàng</h2>
+      <div id="cart-items">Chưa có sản phẩm.</div>
+      <div class="summary">
+        <div>Tạm tính: <span id="subtotal">0</span>₫</div>
+        <div>Phí giao: <span id="shipping">10000</span>₫</div>
+        <div class="total">Tổng: <span id="total">0</span>₫</div>
+      </div>
+
+      <div class="customer">
+        <input id="name" placeholder="Họ và tên" />
+        <input id="phone" placeholder="Số điện thoại (khách)" />
+        <input id="address" placeholder="Địa chỉ (nơi giao)" />
+      </div>
+
+      <button id="place-order">Đặt hàng qua SMS</button>
+      <p class="note">Khi bấm nút, điện thoại sẽ mở ứng dụng SMS với nội dung đơn hàng để bạn gửi cho 0865904246.</p>
+    </aside>
+  </main>
+
+  <footer class="footer">© 2025 Gia Bảo Drinks</footer>
+
+  <script>
+    // Inline config injected by build step
+    window.APP_CONFIG = { phone: "0865904246", shopName: "Gia Bảo Drinks", address: "Chợ Vườn Đào, Thôn Đại Khoang, Cát Lâm, Phù Cát, Bình Định" };
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
